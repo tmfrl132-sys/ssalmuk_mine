@@ -348,6 +348,36 @@ def upcoming(results, today, days):
     return md_table(["날짜", "회선", "내용"], ev) if ev else f"{days}일 내 일정 없음"
 
 
+def dashboard_data(lines, today):
+    views = {}
+    for mode, cash in (("all", False), ("cash", True)):
+        out = []
+        for l in lines:
+            r = compute(l, line_event(l), cash_only=cash, today=today)
+            ev = r["event"]
+            out.append({
+                "name": l["name"], "plan": l["plan"], "carrier": ev["carrier"], "title": ev["title"], "url": ev["url"],
+                "join": str(r["join"]), "cancel": str(r["cancel"]), "hold": r["hold"], "memo": l.get("memo", ""),
+                "todos": l.get("todos", []),
+                "fee_total": r["fee_total"], "gift_total": r["gift_total"], "profit": r["profit"],
+                "monthly_avg": r["monthly_avg"], "received": r["received_so_far"], "paid": r["paid_so_far"],
+                "rows": [{"label": f"M+{x['k']}" if x["k"] else "M", "month": x["month"].strftime("%Y-%m"),
+                          "fee": x["fee"], "gift": x["gift"],
+                          "gifts": [{"label": g["label"], "amount": g["amount"], "kind": g["kind"],
+                                     "date": str(g["date"]) if g["date"] else None} for g in x["gifts"]]}
+                         for x in r["rows"]],
+            })
+        views[mode] = {"lines": out}
+    return {"today": str(today), "generated": dt.datetime.now().strftime("%Y-%m-%d %H:%M"), "views": views}
+
+
+def write_dashboard(lines, today, out):
+    tpl = (ROOT / "templates" / "dashboard.html").read_text(encoding="utf-8")
+    data = json.dumps(dashboard_data(lines, today), ensure_ascii=False).replace("</", "<\\/")
+    Path(out).parent.mkdir(parents=True, exist_ok=True)
+    Path(out).write_text(tpl.replace("/*DATA*/null", data), encoding="utf-8")
+
+
 # ---------------------------------------------------------------- CLI
 def main(argv=None):
     ap = argparse.ArgumentParser(description="쌀먹 회선 관리기")
@@ -359,6 +389,7 @@ def main(argv=None):
     a.add_argument("--memo", default="")
     sub.add_parser("list")
     r = sub.add_parser("report"); r.add_argument("--out"); r.add_argument("--cash-only", action="store_true"); r.add_argument("--today")
+    h = sub.add_parser("html"); h.add_argument("--out", default="reports/dashboard.html"); h.add_argument("--today")
     u = sub.add_parser("upcoming"); u.add_argument("--days", type=int, default=45); u.add_argument("--today")
     args = ap.parse_args(argv)
 
@@ -394,6 +425,10 @@ def main(argv=None):
         return
     today = parse_date(args.today) if getattr(args, "today", None) else dt.date.today()
     results = [compute(l, line_event(l), cash_only=getattr(args, "cash_only", False), today=today) for l in lines]
+    if args.cmd == "html":
+        write_dashboard(lines, today, args.out)
+        print(f"저장: {args.out}")
+        return
     if args.cmd == "report":
         text = report(results, today)
         if args.out:

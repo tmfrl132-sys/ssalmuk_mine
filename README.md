@@ -52,3 +52,11 @@ python3 ssalmuk.py upcoming --days 45
 `data/events/<키>.json`을 같은 형식으로 만들고 (`"manual": true`), 회선에 `event_url` 대신 `"event": "<키>"`.
 30일 주기 지급(예: 쉐이크모바일 Npay)은 요금제의 `interval_gifts`
 (`first_after_days`, `every_days`, `amount`)로 넣는다. 예: `data/events/shakemobile_PL24BR127_35.json`
+
+## 대시보드
+
+```bash
+python3 ssalmuk.py html            # → reports/dashboard.html (브라우저로 열기)
+```
+요약 숫자, 회선 타임라인(가입~해지·지급일), 월별 사은품/요금/누적 손익 차트, 60일 일정, 회선별 상세.
+상단 토글로 Hmall 적립금 포함/현금만 전환. 회선에 `"todos": [{"date": "YYYY-MM-DD", "text": "..."}]`를 넣으면 일정에 표시.

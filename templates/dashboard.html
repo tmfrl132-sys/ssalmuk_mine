@@ -1,0 +1,281 @@
+<title>쌀먹 회선 보드</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* 레이아웃: 상단 요약 숫자 → 회선 타임라인 → 월별 현금흐름 → 회선별 상세. 통신 요금 고지서 느낌의 차분한 청회색 바탕 */
+:root {
+  --bg: #f3f5f7; --panel: #ffffff; --ink: #14181d; --ink-2: #4a525c; --muted: #7b848f;
+  --line: #dde2e8; --grid: #e9edf1; --accent: #1f5fae;
+  --pos: #1a7f4e; --neg: #c2412d;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100;
+  --gift: #2a78d6; --fee: #eb6834; --cum: #14181d;
+  --sans: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111418; --panel: #1a1e23; --ink: #eef1f4; --ink-2: #b9c0c8; --muted: #8a939d;
+  --line: #2c333b; --grid: #232930; --accent: #6aa3e8; --pos: #4cc08a; --neg: #ef7a66;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+  --gift: #3987e5; --fee: #d95926; --cum: #eef1f4; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #111418; --panel: #1a1e23; --ink: #eef1f4; --ink-2: #b9c0c8; --muted: #8a939d;
+  --line: #2c333b; --grid: #232930; --accent: #6aa3e8; --pos: #4cc08a; --neg: #ef7a66;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+  --gift: #3987e5; --fee: #d95926; --cum: #eef1f4; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--sans); }
+.wrap { max-width: 1080px; margin: 0 auto; padding-block: 24px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 20px; }
+header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; }
+h1 { margin: 0; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; }
+.sub { color: var(--muted); font-size: .85rem; }
+h2 { margin: 0 0 12px; font-size: 1rem; font-weight: 600; }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.pos { color: var(--pos); } .neg { color: var(--neg); }
+.toggle { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--panel); }
+.toggle button { font: 500 .82rem var(--sans); color: var(--ink-2); background: transparent; border: 0; padding: 7px 12px; cursor: pointer; }
+.toggle button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+.toggle button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.kpi { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+.kpi .k { font-size: .78rem; color: var(--muted); letter-spacing: .02em; }
+.kpi .v { font: 500 1.45rem var(--mono); font-variant-numeric: tabular-nums; margin-top: 4px; }
+.kpi .h { font-size: .78rem; color: var(--ink-2); margin-top: 2px; }
+section.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; }
+.scroll { overflow-x: auto; }
+svg text { fill: var(--ink-2); font: 11px var(--sans); }
+svg .axis { stroke: var(--line); } svg .gridl { stroke: var(--grid); }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: .8rem; color: var(--ink-2); margin-bottom: 8px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+.legend i.ln { height: 2px; vertical-align: 3px; width: 14px; }
+.tip { position: fixed; pointer-events: none; background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+  border-radius: 8px; padding: 8px 10px; font-size: .8rem; box-shadow: 0 6px 20px rgba(0,0,0,.15); z-index: 20; max-width: 280px; }
+.tip b { font-weight: 600; } .tip .r { display: flex; justify-content: space-between; gap: 16px; }
+table { border-collapse: collapse; width: 100%; font-size: .84rem; }
+th, td { padding: 7px 8px; border-bottom: 1px solid var(--grid); text-align: left; vertical-align: top; }
+th { color: var(--muted); font-weight: 500; font-size: .76rem; white-space: nowrap; }
+td.n, th.n { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.future td { color: var(--ink-2); }
+.lines { display: grid; gap: 16px; }
+.line-head { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; margin-bottom: 8px; }
+.line-head .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+.chip { font-size: .72rem; border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; color: var(--ink-2); }
+.chip.warn { border-color: var(--neg); color: var(--neg); }
+.meta { font-size: .8rem; color: var(--muted); }
+.meta a { color: var(--accent); }
+.gl { font-size: .78rem; color: var(--ink-2); }
+.up { display: grid; gap: 6px; }
+.up .row { display: grid; grid-template-columns: 92px 12px minmax(0,1fr) auto; gap: 10px; align-items: center; font-size: .85rem; }
+.up .row .d { font-family: var(--mono); color: var(--ink-2); }
+.up .row .t { min-width: 0; overflow-wrap: anywhere; }
+.foot { font-size: .78rem; color: var(--muted); }
+@media (max-width: 760px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>쌀먹 회선 보드</h1>
+      <div class="sub" id="sub"></div>
+    </div>
+    <div class="toggle" role="group" aria-label="사은품 범위">
+      <button id="mode-all" aria-pressed="true">적립금 포함</button>
+      <button id="mode-cash" aria-pressed="false">현금만</button>
+    </div>
+  </header>
+
+  <div class="kpis" id="kpis"></div>
+
+  <section class="panel">
+    <h2>회선 타임라인</h2>
+    <div class="legend" id="tl-legend"></div>
+    <div class="scroll"><svg id="timeline" role="img" aria-label="회선별 가입~해지 기간과 사은품 지급일"></svg></div>
+  </section>
+
+  <section class="panel">
+    <h2>월별 현금흐름 (전체 회선)</h2>
+    <div class="legend">
+      <span><i style="background:var(--gift)"></i>사은품</span>
+      <span><i style="background:var(--fee)"></i>요금</span>
+      <span><i class="ln" style="background:var(--cum)"></i>누적 손익</span>
+    </div>
+    <div class="scroll"><svg id="flow" role="img" aria-label="월별 사은품, 요금, 누적 손익"></svg></div>
+  </section>
+
+  <section class="panel">
+    <h2>다가오는 일정 (60일)</h2>
+    <div class="up" id="upcoming"></div>
+  </section>
+
+  <div class="lines" id="lines"></div>
+  <div class="foot" id="foot"></div>
+</div>
+<div class="tip" id="tip" hidden></div>
+
+<script>
+const DATA = /*DATA*/null;
+const fmt = n => Number(n).toLocaleString("ko-KR");
+const sgn = n => (n > 0 ? "+" : "") + fmt(n);
+const cls = n => n > 0 ? "pos" : n < 0 ? "neg" : "";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const SER = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)"];
+const tip = document.getElementById("tip");
+function showTip(e, html) { tip.innerHTML = html; tip.hidden = false; moveTip(e); }
+function moveTip(e) { const w = tip.offsetWidth, h = tip.offsetHeight;
+  let x = e.clientX + 14, y = e.clientY + 14;
+  if (x + w > innerWidth - 8) x = e.clientX - w - 14; if (y + h > innerHeight - 8) y = e.clientY - h - 14;
+  tip.style.left = x + "px"; tip.style.top = y + "px"; }
+function hideTip() { tip.hidden = true; }
+const NS = "http://www.w3.org/2000/svg";
+function el(tag, attrs, parent) { const n = document.createElementNS(NS, tag);
+  for (const k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; }
+const D = s => new Date(s + "T00:00:00");
+const today = D(DATA.today);
+
+let mode = "all";
+try { mode = localStorage.getItem("ssalmuk-mode") || "all"; } catch (e) {}
+
+function render() {
+  const V = DATA.views[mode];
+  document.getElementById("mode-all").setAttribute("aria-pressed", mode === "all");
+  document.getElementById("mode-cash").setAttribute("aria-pressed", mode === "cash");
+  document.getElementById("sub").textContent = `기준일 ${DATA.today} · 회선 ${V.lines.length}개 · 생성 ${DATA.generated}`;
+
+  // KPI
+  const t = V.lines.reduce((a, l) => ({ fee: a.fee + l.fee_total, gift: a.gift + l.gift_total, got: a.got + l.received, paid: a.paid + l.paid }), { fee: 0, gift: 0, got: 0, paid: 0 });
+  const now = t.got - t.paid;
+  const nextCancel = V.lines.filter(l => D(l.cancel) >= today).sort((a, b) => a.cancel.localeCompare(b.cancel))[0];
+  document.getElementById("kpis").innerHTML = [
+    ["예상 총 순이익", `<span class="${cls(t.gift - t.fee)}">${sgn(t.gift - t.fee)}</span>`, `사은품 ${fmt(t.gift)} − 요금 ${fmt(t.fee)}`],
+    ["현재까지 손익", `<span class="${cls(now)}">${sgn(now)}</span>`, `받은 ${fmt(t.got)} · 낸 요금(추정) ${fmt(t.paid)}`],
+    ["남은 수령 예정", fmt(t.gift - t.got), "지급 예정일 기준"],
+    ["다음 해지", nextCancel ? nextCancel.cancel.slice(5).replace("-", "/") : "—", nextCancel ? esc(nextCancel.name) : "예정 없음"],
+  ].map(([k, v, h]) => `<div class="kpi"><div class="k">${k}</div><div class="v">${v}</div><div class="h">${h}</div></div>`).join("");
+
+  drawTimeline(V); drawFlow(V); drawUpcoming(V); drawLines(V);
+  document.getElementById("foot").innerHTML = "계산: ssalmuk.life 스냅샷·공식 페이지 수동 입력 기준. 가입월·해지월 요금은 일할. 실제 지급 조건은 각 이벤트 공식 페이지 확인. "
+    + (mode === "cash" ? "현금만 보기: Hmall 적립금(라이프케어) 제외." : "적립금 포함 보기: Hmall 적립금도 합산.");
+}
+
+function drawTimeline(V) {
+  const svg = document.getElementById("timeline"); svg.innerHTML = "";
+  document.getElementById("tl-legend").innerHTML = V.lines.map((l, i) => `<span><i style="background:${SER[i % 4]}"></i>${esc(l.name)}</span>`).join("")
+    + `<span><i style="background:var(--ink);border-radius:50%"></i>지급일</span>`;
+  const starts = V.lines.map(l => D(l.join)), ends = V.lines.map(l => D(l.cancel));
+  const min = new Date(Math.min(...starts)); min.setDate(1);
+  const max = new Date(Math.max(...ends)); max.setMonth(max.getMonth() + 1, 1);
+  const W = Math.max(720, svg.parentElement.clientWidth), L = 120, R = 16, rowH = 44, top = 26;
+  const H = top + V.lines.length * rowH + 8;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("width", W); svg.setAttribute("height", H);
+  const x = d => L + (d - min) / (max - min) * (W - L - R);
+  for (let m = new Date(min); m <= max; m.setMonth(m.getMonth() + 1)) {
+    const xx = x(m); el("line", { x1: xx, x2: xx, y1: top - 6, y2: H - 4, class: "gridl" }, svg);
+    if (m < max) { const t = el("text", { x: xx + 4, y: 14 }, svg); t.textContent = (m.getMonth() === 0 || +m === +min ? `${String(m.getFullYear()).slice(2)}.` : "") + (m.getMonth() + 1) + "월"; }
+  }
+  const tx = x(today); el("line", { x1: tx, x2: tx, y1: top - 8, y2: H - 4, stroke: "var(--accent)", "stroke-width": 1.5, "stroke-dasharray": "3 3" }, svg);
+  const tt = el("text", { x: tx + 4, y: H - 6, fill: "var(--accent)" }, svg); tt.textContent = "오늘"; tt.style.fill = "var(--accent)";
+  V.lines.forEach((l, i) => {
+    const y = top + i * rowH + 10;
+    const name = el("text", { x: 0, y: y + 13 }, svg); name.textContent = l.name.length > 12 ? l.name.slice(0, 12) + "…" : l.name; name.style.fill = "var(--ink)";
+    const x1 = x(D(l.join)), x2 = x(D(l.cancel));
+    const bar = el("rect", { x: x1, y, width: Math.max(2, x2 - x1), height: 18, rx: 4, fill: SER[i % 4], opacity: .28 }, svg);
+    el("rect", { x: x1, y, width: Math.max(2, Math.min(x2, tx) - x1), height: 18, rx: 4, fill: SER[i % 4], opacity: tx > x1 ? .85 : 0 }, svg);
+    const hit = el("rect", { x: x1, y: y - 4, width: Math.max(8, x2 - x1), height: 26, fill: "transparent" }, svg);
+    const info = `<b>${esc(l.name)}</b><div>${esc(l.plan)}</div><div class="r"><span>가입</span><span class="num">${l.join}</span></div><div class="r"><span>해지</span><span class="num">${l.cancel}</span></div><div class="r"><span>순이익</span><span class="num">${sgn(l.profit)}</span></div>`;
+    hit.addEventListener("mousemove", e => showTip(e, info)); hit.addEventListener("mouseleave", hideTip);
+    l.rows.forEach(r => r.gifts.forEach(g => {
+      if (!g.date) return;
+      const c = el("circle", { cx: x(D(g.date)), cy: y + 9, r: 4.5, fill: D(g.date) <= today ? "var(--ink)" : "var(--panel)", stroke: "var(--ink)", "stroke-width": 1.5 }, svg);
+      const big = el("circle", { cx: x(D(g.date)), cy: y + 9, r: 10, fill: "transparent" }, svg);
+      big.addEventListener("mousemove", e => showTip(e, `<b>${g.date}</b><div>${esc(l.name)}</div><div>${esc(g.label)}</div><div class="num">${fmt(g.amount)}원</div>`));
+      big.addEventListener("mouseleave", hideTip);
+    }));
+  });
+}
+
+function drawFlow(V) {
+  const svg = document.getElementById("flow"); svg.innerHTML = "";
+  const by = {};
+  V.lines.forEach(l => l.rows.forEach(r => { const b = by[r.month] ||= { fee: 0, gift: 0, items: [] };
+    b.fee += r.fee; b.gift += r.gift; b.items.push([l.name, r.gift - r.fee]); }));
+  const months = Object.keys(by).sort(); let acc = 0;
+  const pts = months.map(m => { acc += by[m].gift - by[m].fee; return { m, ...by[m], cum: acc }; });
+  const W = Math.max(720, svg.parentElement.clientWidth), H = 300, L = 64, R = 16, T = 12, B = 28;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("width", W); svg.setAttribute("height", H);
+  const hi = Math.max(...pts.map(p => Math.max(p.gift, p.cum)), 1), lo = Math.min(...pts.map(p => Math.min(-p.fee, p.cum)), 0);
+  const step = niceStep((hi - lo) / 5); const yMax = Math.ceil(hi / step) * step, yMin = Math.floor(lo / step) * step;
+  const y = v => T + (yMax - v) / (yMax - yMin) * (H - T - B);
+  for (let v = yMin; v <= yMax + 1; v += step) {
+    el("line", { x1: L, x2: W - R, y1: y(v), y2: y(v), class: v === 0 ? "axis" : "gridl" }, svg);
+    const t = el("text", { x: L - 8, y: y(v) + 4, "text-anchor": "end" }, svg); t.textContent = v === 0 ? "0" : (v / 10000) + "만";
+  }
+  const band = (W - L - R) / pts.length, bw = Math.min(26, band * .32);
+  pts.forEach((p, i) => {
+    const cx = L + band * (i + .5);
+    if (p.gift) el("path", { d: barPath(cx - bw - 1, y(p.gift), bw, y(0) - y(p.gift), true), fill: "var(--gift)" }, svg);
+    if (p.fee) el("path", { d: barPath(cx + 1, y(0), bw, y(-p.fee) - y(0), false), fill: "var(--fee)" }, svg);
+    const t = el("text", { x: cx, y: H - 8, "text-anchor": "middle" }, svg); t.textContent = p.m.slice(2).replace("-", ".");
+  });
+  const d = pts.map((p, i) => `${i ? "L" : "M"}${L + band * (i + .5)},${y(p.cum)}`).join("");
+  el("path", { d, fill: "none", stroke: "var(--cum)", "stroke-width": 2 }, svg);
+  const last = pts[pts.length - 1];
+  el("circle", { cx: L + band * (pts.length - .5), cy: y(last.cum), r: 4, fill: "var(--cum)", stroke: "var(--panel)", "stroke-width": 2 }, svg);
+  const lt = el("text", { x: L + band * (pts.length - .5) - 6, y: y(last.cum) - 10, "text-anchor": "end" }, svg);
+  lt.textContent = sgn(last.cum); lt.style.fill = "var(--ink)"; lt.style.fontWeight = 600;
+  const cross = el("line", { y1: T, y2: H - B, stroke: "var(--muted)", "stroke-dasharray": "2 3", opacity: 0 }, svg);
+  pts.forEach((p, i) => {
+    const hit = el("rect", { x: L + band * i, y: T, width: band, height: H - T - B, fill: "transparent" }, svg);
+    hit.addEventListener("mousemove", e => { cross.setAttribute("x1", L + band * (i + .5)); cross.setAttribute("x2", L + band * (i + .5)); cross.setAttribute("opacity", 1);
+      showTip(e, `<b>${p.m}</b><div class="r"><span>사은품</span><span class="num">${fmt(p.gift)}</span></div><div class="r"><span>요금</span><span class="num">${fmt(p.fee)}</span></div><div class="r"><span>월 손익</span><span class="num">${sgn(p.gift - p.fee)}</span></div><div class="r"><span>누적</span><span class="num">${sgn(p.cum)}</span></div>`
+        + p.items.map(([n, v]) => `<div class="r gl"><span>${esc(n)}</span><span class="num">${sgn(v)}</span></div>`).join("")); });
+    hit.addEventListener("mouseleave", () => { cross.setAttribute("opacity", 0); hideTip(); });
+  });
+}
+function niceStep(raw) { const p = Math.pow(10, Math.floor(Math.log10(raw))); const f = raw / p; return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p; }
+function barPath(x, y, w, h, roundTop) { const r = Math.min(4, w / 2, h);
+  return roundTop ? `M${x},${y + h}V${y + r}Q${x},${y} ${x + r},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + h}Z`
+                  : `M${x},${y}H${x + w}V${y + h - r}Q${x + w},${y + h} ${x + w - r},${y + h}H${x + r}Q${x},${y + h} ${x},${y + h - r}Z`; }
+
+function drawUpcoming(V) {
+  const until = new Date(today); until.setDate(until.getDate() + 60);
+  const ev = [];
+  V.lines.forEach((l, i) => {
+    l.rows.forEach(r => r.gifts.forEach(g => { if (g.date && D(g.date) >= today && D(g.date) <= until) ev.push([g.date, i, `${l.name} · ${g.label}`, fmt(g.amount) + "원", false]); }));
+    if (D(l.cancel) >= today && D(l.cancel) <= until) ev.push([l.cancel, i, `${l.name} · 해지 예정일 (번호이동 준비)`, "", true]);
+    (l.todos || []).forEach(t => { if (D(t.date) >= today && D(t.date) <= until) ev.push([t.date, i, `${l.name} · ${t.text}`, "", true]); });
+  });
+  ev.sort((a, b) => a[0].localeCompare(b[0]));
+  document.getElementById("upcoming").innerHTML = ev.length ? ev.map(([d, i, t, a, w]) =>
+    `<div class="row"><span class="d">${d}</span><span class="dot" style="width:10px;height:10px;border-radius:50%;background:${SER[i % 4]}"></span><span class="t">${w ? '<span class="chip warn">할 일</span> ' : ""}${esc(t)}</span><span class="num">${a}</span></div>`).join("")
+    : '<div class="meta">60일 안에 예정된 지급·해지가 없어.</div>';
+}
+
+function drawLines(V) {
+  document.getElementById("lines").innerHTML = V.lines.map((l, i) => `
+    <section class="panel">
+      <div class="line-head">
+        <h2 style="margin:0"><span class="dot" style="background:${SER[i % 4]}"></span>${esc(l.name)}</h2>
+        <span class="chip">${esc(l.carrier)}</span><span class="chip">${esc(l.plan)}</span>
+        <span class="chip">${l.join} → ${l.cancel} · ${l.hold}개월</span>
+        <span class="num ${cls(l.profit)}" style="margin-left:auto;font-weight:500">${sgn(l.profit)} <span class="meta">(월 ${sgn(l.monthly_avg)})</span></span>
+      </div>
+      <div class="meta"><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.title)}</a>${l.memo ? " · " + esc(l.memo) : ""}</div>
+      <div class="scroll" style="margin-top:8px"><table>
+        <thead><tr><th>회차</th><th>월</th><th class="n">요금</th><th class="n">사은품</th><th class="n">손익</th><th>지급 내역</th></tr></thead>
+        <tbody>${l.rows.map(r => `<tr class="${D(r.month + "-01") > today ? "future" : ""}"><td>${r.label}</td><td class="num">${r.month}</td>
+          <td class="n">${fmt(r.fee)}</td><td class="n">${fmt(r.gift)}</td><td class="n ${cls(r.gift - r.fee)}">${sgn(r.gift - r.fee)}</td>
+          <td class="gl">${r.gifts.map(g => `${esc(g.label)} <span class="num">${fmt(g.amount)}</span> <span class="meta">${g.date ? g.date.slice(5) : "날짜 공지"}</span>`).join("<br>") || "—"}</td></tr>`).join("")}
+        <tr><td colspan="2"><b>합계</b></td><td class="n"><b>${fmt(l.fee_total)}</b></td><td class="n"><b>${fmt(l.gift_total)}</b></td><td class="n ${cls(l.profit)}"><b>${sgn(l.profit)}</b></td><td></td></tr>
+        </tbody></table></div>
+    </section>`).join("");
+}
+
+function setMode(m) { mode = m; try { localStorage.setItem("ssalmuk-mode", m); } catch (e) {} render(); }
+document.getElementById("mode-all").addEventListener("click", () => setMode("all"));
+document.getElementById("mode-cash").addEventListener("click", () => setMode("cash"));
+let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(render, 150); });
+render();
+</script>
