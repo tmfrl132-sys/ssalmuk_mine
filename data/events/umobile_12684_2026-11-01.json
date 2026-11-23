@@ -1,0 +1,1343 @@
+{
+ "key": "umobile_12684_2026-11-01",
+ "url": "https://ssalmuk.life/events/umobile/12684/2026-11-01",
+ "carrier": "umobile",
+ "source_id": "12684",
+ "title": "유모바일 [타임딜] 기간한정 타임딜 오픈!",
+ "period": [
+  "2026-11-01",
+  "2026-11-16"
+ ],
+ "promo_code": "타임딜",
+ "fetched_at": "2026-11-23T06:32:51",
+ "site_basis_join_date": "2026-11-01",
+ "catalog": [
+  {
+   "label": "네이버페이 #2",
+   "payout": "M+2 20일경",
+   "monthly": "30,000",
+   "count": "6",
+   "total": "180,000",
+   "target": [
+    "5G (15GB+/300분)",
+    "플러스알파 (7GB+/통화기본)"
+   ],
+   "kind": "네이버페이"
+  },
+  {
+   "label": "네이버페이 #1",
+   "payout": "M+2 20일경",
+   "monthly": "20,000",
+   "count": "6",
+   "total": "120,000",
+   "target": [
+    "플러스알파 (1GB+/통화기본)"
+   ],
+   "kind": "네이버페이"
+  },
+  {
+   "label": "윌 야쿠르트",
+   "payout": "익월 16일",
+   "monthly": "7,000",
+   "count": "24",
+   "total": "168,000",
+   "target": [
+    "플러스알파 (7GB+/통화기본)",
+    "플러스알파 (1GB+/통화기본)"
+   ],
+   "kind": "기타 · 추정가 7,000원"
+  },
+  {
+   "label": "추가데이터",
+   "payout": "가입월",
+   "monthly": "10GB",
+   "count": "24",
+   "total": "—",
+   "target": [
+    "5G (15GB+/300분)"
+   ],
+   "kind": "기타 · 현물보너스"
+  },
+  {
+   "label": "프레딧 할인쿠폰",
+   "payout": "가입월",
+   "monthly": "6매",
+   "count": "24",
+   "total": "—",
+   "target": [
+    "플러스알파 (7GB+/통화기본)",
+    "플러스알파 (1GB+/통화기본)"
+   ],
+   "kind": "쿠폰 · 현물보너스"
+  }
+ ],
+ "notes": "(본 유의사항은 요약한 참고사항이며, 정확한 정보는 이벤트 페이지를 참고하시기 바랍니다.)\n사은품 받으려면\n가입 시 이벤트코드 [타임딜] 입력\n마케팅 수신 동의\n주의\n사은품마다 개통·신청 기한이 이벤트 기간과 다를 수 있습니다.\n타임딜 이벤트코드: 11월 1일 ~ 11월 9일 (11월 10일까지 개통 인정)\n지급일\n이벤트코드 사은품: 가입월 기준 M+2개월 후부터 매월 20일경 지급\n윌 야쿠르트 교환쿠폰: 익월 16일 발송 (주말·공휴일이면 다음 영업일)\n요금제 쿠폰 유효기간: 지급일 기준 익월 말까지",
+ "plans": {
+  "5G (15GB+/300분)": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 2,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 3,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 4,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 5,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 6,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 7,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 8,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 9,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 10,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 11,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 12,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 13,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 14,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 15,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 16,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 17,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 18,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 19,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 20,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 21,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 22,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 23,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "추가데이터",
+       "payout_day": null
+      }
+     ]
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 30,
+    "10": 31,
+    "11": 30,
+    "12": 31,
+    "13": 30,
+    "14": 31,
+    "15": 31,
+    "16": 29,
+    "17": 31,
+    "18": 30,
+    "19": 31,
+    "2": 31,
+    "20": 30,
+    "21": 31,
+    "22": 31,
+    "23": 30,
+    "24": 31,
+    "3": 31,
+    "4": 28,
+    "5": 31,
+    "6": 30,
+    "7": 31,
+    "8": 30,
+    "9": 31
+   }
+  },
+  "플러스알파 (1GB+/통화기본)": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 2,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 20000,
+       "label": "네이버페이 #1",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 3,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 20000,
+       "label": "네이버페이 #1",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 4,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 20000,
+       "label": "네이버페이 #1",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 5,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 20000,
+       "label": "네이버페이 #1",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 6,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 20000,
+       "label": "네이버페이 #1",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 7,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 20000,
+       "label": "네이버페이 #1",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 8,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 9,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 10,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 11,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 12,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 13,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 14,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 15,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 16,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 17,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 18,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 19,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 20,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 21,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 22,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 23,
+     "fee": 11500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 30,
+    "10": 31,
+    "11": 30,
+    "12": 31,
+    "13": 30,
+    "14": 31,
+    "15": 31,
+    "16": 29,
+    "17": 31,
+    "18": 30,
+    "19": 31,
+    "2": 31,
+    "20": 30,
+    "21": 31,
+    "22": 31,
+    "23": 30,
+    "24": 31,
+    "3": 31,
+    "4": 28,
+    "5": 31,
+    "6": 30,
+    "7": 31,
+    "8": 30,
+    "9": 31
+   }
+  },
+  "플러스알파 (7GB+/통화기본)": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 2,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 3,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 4,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 5,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 6,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 7,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "네이버페이 #2",
+       "payout_day": 20
+      },
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 8,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 9,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 10,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 11,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 12,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 13,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 14,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 15,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 16,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 17,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 18,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 19,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 20,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 21,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 22,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 23,
+     "fee": 17500,
+     "gifts_cash": [
+      {
+       "amount": 7000,
+       "label": "윌 야쿠르트",
+       "payout_day": 16
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 30,
+    "10": 31,
+    "11": 30,
+    "12": 31,
+    "13": 30,
+    "14": 31,
+    "15": 31,
+    "16": 29,
+    "17": 31,
+    "18": 30,
+    "19": 31,
+    "2": 31,
+    "20": 30,
+    "21": 31,
+    "22": 31,
+    "23": 30,
+    "24": 31,
+    "3": 31,
+    "4": 28,
+    "5": 31,
+    "6": 30,
+    "7": 31,
+    "8": 30,
+    "9": 31
+   }
+  }
+ }
+}
