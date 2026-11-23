@@ -46,3 +46,9 @@ python3 ssalmuk.py upcoming --days 45
   가입월이 사이트 기준월과 다르면 1개월 어긋날 수 있음 → 공식 유의사항 확인.
 - 사이트 합계에는 Hmall 적립금(라이프케어)도 현금처럼 포함됨.
 - 개통 기간 조건(예: 5만원 추가증정은 11/2~11/15 개통만)은 자동 반영 안 됨 → `exclude_gifts`로 제외.
+
+## ssalmuk.life에 없는 통신사 (수동 이벤트)
+
+`data/events/<키>.json`을 같은 형식으로 만들고 (`"manual": true`), 회선에 `event_url` 대신 `"event": "<키>"`.
+30일 주기 지급(예: 쉐이크모바일 Npay)은 요금제의 `interval_gifts`
+(`first_after_days`, `every_days`, `amount`)로 넣는다. 예: `data/events/shakemobile_PL24BR127_35.json`

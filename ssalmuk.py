@@ -150,6 +150,16 @@ def fetch(url, force=False):
     return ev
 
 
+def line_event(line):
+    """회선의 이벤트 로드: ssalmuk URL이면 스냅샷, `event` 키면 data/events/<키>.json (수동 입력)."""
+    if line.get("event"):
+        path = EVENT_DIR / f"{line['event']}.json"
+        if not path.exists():
+            raise SystemExit(f"[{line['name']}] 수동 이벤트 파일 없음: {path}")
+        return json.loads(path.read_text(encoding="utf-8"))
+    return load_event(line["event_url"])
+
+
 def load_event(url):
     key, _ = event_key(url)
     path = EVENT_DIR / f"{key}.json"
@@ -231,6 +241,17 @@ def compute(line, ev, cash_only=False, today=None):
                 continue  # 지급일 전에 해지
             pdate = dt.date(ms.year, ms.month, min(pday, d_in)) if pday else gift_fixed_date(ev, g["label"])
             gifts.append({"label": g["label"], "amount": g["amount"], "date": pdate, "kind": kind})
+        for ig in plan.get("interval_gifts", []):
+            if any(s in ig["label"] for s in excl):
+                continue
+            n = 0
+            while True:
+                d = join + dt.timedelta(days=ig["first_after_days"] + n * ig["every_days"])
+                if d > cancel or (ig.get("times") and n >= ig["times"]):
+                    break
+                if (d.year, d.month) == (ms.year, ms.month):
+                    gifts.append({"label": ig["label"], "amount": ig["amount"], "date": d, "kind": ig.get("kind", "")})
+                n += 1
         gsum = sum(g["amount"] for g in gifts)
         rows.append({"k": k, "month": ms, "fee": fee, "gifts": gifts, "gift": gsum, "profit": gsum - fee})
     fee_t = sum(r["fee"] for r in rows)
@@ -275,7 +296,7 @@ def report(results, today):
     o.append("")
 
     # 통합 월별 현금흐름
-    o.append("## 월별 현금흐름 (4회선 합산)")
+    o.append("## 월별 현금흐름 (전체 회선 합산)")
     by = {}
     for r in results:
         for x in r["rows"]:
@@ -372,7 +393,7 @@ def main(argv=None):
             print(f"- {l['name']}: {l['plan']} / 가입 {l['join_date']} / {l.get('cancel_date') or str(l.get('hold_months')) + '개월'}")
         return
     today = parse_date(args.today) if getattr(args, "today", None) else dt.date.today()
-    results = [compute(l, load_event(l["event_url"]), cash_only=getattr(args, "cash_only", False), today=today) for l in lines]
+    results = [compute(l, line_event(l), cash_only=getattr(args, "cash_only", False), today=today) for l in lines]
     if args.cmd == "report":
         text = report(results, today)
         if args.out:
