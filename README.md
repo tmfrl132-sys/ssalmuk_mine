@@ -66,24 +66,18 @@
 
 ④번을 빼먹으면 삼성이 앱을 "잠자는 앱"으로 바꿔서 문자가 와도 앱이 안 깨어남.
 
-## 업데이트 설치용 서명키 (선택)
+## 업데이트 설치용 서명키
 
-서명키를 따로 넣지 않으면 매 빌드가 다른 임시 키로 서명됨 → 새 버전은 **기존 앱을 지우고 다시 설치**해야 하고, 그러면 설정도 다시 입력해야 함.
-업데이트로 덮어 설치하려면 PC에서 키를 한 번 만들고 GitHub Secrets에 등록:
-
-```bash
-keytool -genkeypair -v -keystore release.jks -alias smsfwd -keyalg RSA -keysize 2048 -validity 10000
-base64 -w0 release.jks   # 출력값을 SIGNING_KEYSTORE_B64 에
-```
+GitHub Secrets에 아래 2개가 있으면 매 빌드가 같은 키로 서명돼서 **기존 앱 위에 덮어쓰기 설치**가 됨 (설정 유지).
+없으면 임시 키로 서명 → 업데이트마다 삭제 후 재설치 필요.
 
 | Secret 이름 | 값 |
 |---|---|
-| `SIGNING_KEYSTORE_B64` | 위 base64 출력 |
-| `SIGNING_STORE_PASSWORD` | 키스토어 비밀번호 |
-| `SIGNING_KEY_ALIAS` | `smsfwd` |
-| `SIGNING_KEY_PASSWORD` | 키 비밀번호 |
+| `SIGNING_KEYSTORE_B64` | 키스토어(.jks, PKCS12, alias `smsfwd`)의 base64 |
+| `SIGNING_PASSWORD` | 키스토어·키 비밀번호 |
 
-`release.jks` 파일은 레포에 올리면 안 됨 (.gitignore 처리됨).
+- 키스토어 파일·비밀번호는 레포에 올리지 말 것 (.gitignore 처리됨)
+- **키를 잃어버리면 다시 삭제 후 재설치**해야 하므로 비밀번호 관리자 등에 백업해 둘 것
 
 ## 리스크
 

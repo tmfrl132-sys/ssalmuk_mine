@@ -5,6 +5,7 @@ import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.os.PowerManager
 import android.provider.Settings
@@ -38,7 +39,10 @@ class MainActivity : Activity() {
         target.setText(Prefs.target(this))
         enabled.isChecked = Prefs.enabled(this)
 
-        findViewById<Button>(R.id.btnPerm).setOnClickListener { requestPermissions(perms, 1) }
+        findViewById<Button>(R.id.btnPerm).setOnClickListener {
+            // 5.x는 설치할 때 권한이 이미 허용됨
+            if (Build.VERSION.SDK_INT >= 23) requestPermissions(perms, 1) else toast("이 기기는 설치 시 권한이 자동 허용됨")
+        }
         findViewById<Button>(R.id.btnBattery).setOnClickListener { askBatteryExemption() }
         findViewById<Button>(R.id.btnAppInfo).setOnClickListener {
             startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:$packageName")))
@@ -70,12 +74,16 @@ class MainActivity : Activity() {
         refresh()
     }
 
-    private fun hasPerms() = perms.all { checkSelfPermission(it) == PackageManager.PERMISSION_GRANTED }
+    private fun hasPerms() = Build.VERSION.SDK_INT < 23 ||
+        perms.all { checkSelfPermission(it) == PackageManager.PERMISSION_GRANTED }
 
-    private fun batteryOk() = (getSystemService(POWER_SERVICE) as PowerManager).isIgnoringBatteryOptimizations(packageName)
+    /** 5.x는 배터리 최적화(Doze) 자체가 없음 */
+    private fun batteryOk() = Build.VERSION.SDK_INT < 23 ||
+        (getSystemService(POWER_SERVICE) as PowerManager).isIgnoringBatteryOptimizations(packageName)
 
     private fun askBatteryExemption() {
         if (batteryOk()) { toast("이미 예외 등록됨"); return }
+        if (Build.VERSION.SDK_INT < 23) return
         try {
             startActivity(Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS, Uri.parse("package:$packageName")))
         } catch (e: Exception) {

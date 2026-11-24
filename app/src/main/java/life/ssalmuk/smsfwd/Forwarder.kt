@@ -73,7 +73,7 @@ object Forwarder {
     }
 
     private fun smsManager(ctx: Context, subId: Int): SmsManager {
-        val valid = subId >= 0 && SubscriptionManager.isValidSubscriptionId(subId)
+        val valid = subId >= 0 && (Build.VERSION.SDK_INT < 29 || SubscriptionManager.isValidSubscriptionId(subId))
         return if (Build.VERSION.SDK_INT >= 31) {
             val base = ctx.getSystemService(SmsManager::class.java)
             if (valid) base.createForSubscriptionId(subId) else base
@@ -107,7 +107,7 @@ object Forwarder {
                 sent.add(
                     PendingIntent.getBroadcast(
                         ctx, reqCode.incrementAndGet(), intent,
-                        PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_ONE_SHOT,
+                        (if (Build.VERSION.SDK_INT >= 23) PendingIntent.FLAG_IMMUTABLE else 0) or PendingIntent.FLAG_ONE_SHOT,
                     )
                 )
             }

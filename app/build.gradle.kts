@@ -4,7 +4,7 @@ plugins {
 }
 
 // 업데이트 설치가 되려면 매번 같은 키로 서명해야 함.
-// GitHub Secrets(SIGNING_KEYSTORE_B64 등)가 있으면 그 키로, 없으면 디버그 키로 서명.
+// GitHub Secrets(SIGNING_KEYSTORE_B64, SIGNING_PASSWORD)가 있으면 그 키로, 없으면 디버그 키로 서명.
 val ksFile = System.getenv("SIGNING_KEYSTORE_FILE")
 
 android {
@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId = "life.ssalmuk.smsfwd"
-        minSdk = 26
+        minSdk = 22 // 안드로이드 5.1 (LG V10 등 구형폰 지원)
         targetSdk = 35
         versionCode = (System.getenv("GITHUB_RUN_NUMBER") ?: "1").toInt()
         versionName = "1.0.${System.getenv("GITHUB_RUN_NUMBER") ?: "0"}"
@@ -23,9 +23,9 @@ android {
         if (ksFile != null) {
             create("release") {
                 storeFile = file(ksFile)
-                storePassword = System.getenv("SIGNING_STORE_PASSWORD")
-                keyAlias = System.getenv("SIGNING_KEY_ALIAS")
-                keyPassword = System.getenv("SIGNING_KEY_PASSWORD")
+                storePassword = System.getenv("SIGNING_PASSWORD")
+                keyAlias = "smsfwd"
+                keyPassword = System.getenv("SIGNING_PASSWORD")
             }
         }
     }
