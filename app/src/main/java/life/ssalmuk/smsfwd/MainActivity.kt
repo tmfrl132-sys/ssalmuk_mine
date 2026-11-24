@@ -19,11 +19,11 @@ class MainActivity : Activity() {
         Manifest.permission.RECEIVE_SMS,
         Manifest.permission.READ_SMS,
         Manifest.permission.RECEIVE_MMS,
+        Manifest.permission.SEND_SMS,
     )
 
     private lateinit var label: EditText
-    private lateinit var token: EditText
-    private lateinit var chatId: EditText
+    private lateinit var target: EditText
     private lateinit var enabled: Switch
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,13 +31,11 @@ class MainActivity : Activity() {
         setContentView(R.layout.activity_main)
 
         label = findViewById(R.id.label)
-        token = findViewById(R.id.token)
-        chatId = findViewById(R.id.chatId)
+        target = findViewById(R.id.target)
         enabled = findViewById(R.id.enabled)
 
         label.setText(Prefs.label(this))
-        token.setText(Prefs.token(this))
-        chatId.setText(Prefs.chatId(this))
+        target.setText(Prefs.target(this))
         enabled.isChecked = Prefs.enabled(this)
 
         findViewById<Button>(R.id.btnPerm).setOnClickListener { requestPermissions(perms, 1) }
@@ -46,7 +44,6 @@ class MainActivity : Activity() {
             startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:$packageName")))
         }
         findViewById<Button>(R.id.btnSave).setOnClickListener { save(); toast("저장됨") }
-        findViewById<Button>(R.id.btnFind).setOnClickListener { findChatId() }
         findViewById<Button>(R.id.btnTest).setOnClickListener { sendTest() }
         enabled.setOnCheckedChangeListener { _, _ -> save() }
 
@@ -83,37 +80,18 @@ class MainActivity : Activity() {
     }
 
     private fun save() {
-        Prefs.save(this, token.text.toString(), chatId.text.toString(), label.text.toString(), enabled.isChecked)
+        Prefs.save(this, target.text.toString(), label.text.toString(), enabled.isChecked)
         refresh()
-    }
-
-    private fun findChatId() {
-        val t = token.text.toString().trim()
-        if (t.isEmpty()) { toast("토큰부터 입력"); return }
-        Thread {
-            val msg = try {
-                val id = Telegram.findChatId(t)
-                runOnUiThread { chatId.setText(id); save() }
-                "chat_id 찾음: $id"
-            } catch (e: Exception) {
-                "실패: ${e.message}"
-            }
-            runOnUiThread { toast(msg) }
-        }.start()
     }
 
     private fun sendTest() {
         save()
-        Thread {
-            val text = Forwarder.format(this, "테스트", "문자전달 앱", System.currentTimeMillis(), -1, "연결 확인용 테스트 메시지")
-            val msg = when (val r = Telegram.send(Prefs.token(this), Prefs.chatId(this), text)) {
-                is Telegram.Result.Ok -> "테스트 전송 성공"
-                is Telegram.Result.Fail -> "실패: ${r.msg}"
-                is Telegram.Result.Retry -> "실패(네트워크): ${r.msg}"
-            }
-            Prefs.log(this, msg)
-            runOnUiThread { toast(msg); refresh() }
-        }.start()
+        if (!hasPerms()) { toast("문자 권한부터 허용"); return }
+        if (!Prefs.configured(this)) { toast("받을 번호부터 입력"); return }
+        val text = Forwarder.format(this, "테스트", "문자전달", System.currentTimeMillis(), -1, "연결 확인용 테스트 문자")
+        Forwarder.send(this, Prefs.target(this), -1, text, 0, "테스트")
+        toast("테스트 문자 발송 요청함. 결과는 아래 기록에 표시")
+        label.postDelayed({ refresh() }, 5000)
     }
 
     private fun refresh() {
@@ -121,7 +99,7 @@ class MainActivity : Activity() {
         findViewById<TextView>(R.id.status).text = buildString {
             append("${mark(hasPerms())} 문자 권한\n")
             append("${mark(batteryOk())} 배터리 최적화 예외\n")
-            append("${mark(Prefs.configured(this@MainActivity))} 텔레그램 설정\n")
+            append("${mark(Prefs.configured(this@MainActivity))} 받을 번호 설정\n")
             append("${mark(Prefs.enabled(this@MainActivity))} 전달 켜짐")
         }
         findViewById<TextView>(R.id.log).text = Prefs.logText(this).ifEmpty { "(기록 없음)" }

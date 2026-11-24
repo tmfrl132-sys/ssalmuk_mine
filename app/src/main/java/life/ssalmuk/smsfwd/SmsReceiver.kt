@@ -23,13 +23,6 @@ class SmsReceiver : BroadcastReceiver() {
             )
         }
 
-        val pending = goAsync()
-        Thread {
-            try {
-                texts.forEach { (sender, text) -> Forwarder.sendNowOrQueue(ctx, sender, text) }
-            } finally {
-                pending.finish()
-            }
-        }.start()
+        texts.forEach { (sender, text) -> Forwarder.forward(ctx, sender, subId, text) }
     }
 }

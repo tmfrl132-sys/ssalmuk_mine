@@ -53,40 +53,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
-            android:text="텔레그램 봇 토큰 (@BotFather에서 발급)" />
+            android:text="받을 번호 (메인폰, 예: 01012345678)" />
 
         <EditText
-            android:id="@+id/token"
+            android:id="@+id/target"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
+            android:inputType="phone"
             android:singleLine="true" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:text="chat_id (봇에게 아무 말 보낸 뒤 [찾기])" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/chatId"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:inputType="numberSigned"
-                android:singleLine="true" />
-
-            <Button
-                android:id="@+id/btnFind"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="찾기" />
-        </LinearLayout>
 
         <Switch
             android:id="@+id/enabled"
