@@ -97,15 +97,11 @@ object MmsScanner {
 
                     val sender = senderOf(ctx, id)
                     val (text, images) = bodyOf(ctx, id)
-                    val body = buildString {
-                        if (subject.isNotBlank()) append("[제목] ").append(subject).append("\n")
-                        append(text.ifBlank { "(본문 없음)" })
-                        if (images > 0) append("\n(이미지 ${images}개, 서브폰 확인)")
-                    }
+                    val body = if (subject.isNotBlank() && !text.contains(subject)) "$subject\n$text" else text
                     val kind = if (images > 0) "MMS" else "LMS"
                     Forwarder.forward(
                         ctx, sender, subId,
-                        Forwarder.format(ctx, kind, sender, dateSec * 1000, Forwarder.slotOfSub(subId), body),
+                        Forwarder.format(ctx, kind, sender, dateSec * 1000, Forwarder.slotOfSub(subId), body, images),
                     )
                     last = id
                     Prefs.setLastMmsId(ctx, last)

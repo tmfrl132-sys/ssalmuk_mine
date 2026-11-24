@@ -16,6 +16,12 @@ object Prefs {
     fun target(ctx: Context) = sp(ctx).getString("target", "")!!.trim()
     fun label(ctx: Context) = sp(ctx).getString("label", "")!!.trim()
     fun enabled(ctx: Context) = sp(ctx).getBoolean("enabled", true)
+    /** 긴 문자는 핵심 줄만 요약해서 보냄 */
+    fun summarize(ctx: Context) = sp(ctx).getBoolean("summarize", true)
+
+    fun setSummarize(ctx: Context, on: Boolean) {
+        sp(ctx).edit().putBoolean("summarize", on).apply()
+    }
 
     fun save(ctx: Context, target: String, label: String, enabled: Boolean) {
         sp(ctx).edit()
