@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId = "life.ssalmuk.smsfwd"
-        minSdk = 23 // 안드로이드 6.0 (LG V10 등 구형폰 지원)
+        minSdk = 22 // 안드로이드 5.1 (LG V10 등 구형폰 지원)
         targetSdk = 35
         versionCode = (System.getenv("GITHUB_RUN_NUMBER") ?: "1").toInt()
         versionName = "1.0.${System.getenv("GITHUB_RUN_NUMBER") ?: "0"}"
