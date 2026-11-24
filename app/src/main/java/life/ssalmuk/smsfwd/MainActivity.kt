@@ -46,6 +46,10 @@ class MainActivity : Activity() {
         findViewById<Button>(R.id.btnSave).setOnClickListener { save(); toast("저장됨") }
         findViewById<Button>(R.id.btnTest).setOnClickListener { sendTest() }
         enabled.setOnCheckedChangeListener { _, _ -> save() }
+        findViewById<Switch>(R.id.summarize).apply {
+            isChecked = Prefs.summarize(this@MainActivity)
+            setOnCheckedChangeListener { _, on -> Prefs.setSummarize(this@MainActivity, on) }
+        }
 
         MmsScanner.schedulePeriodic(this)
     }

@@ -70,6 +70,13 @@
             android:paddingBottom="12dp"
             android:text="전달 켜기" />
 
+        <Switch
+            android:id="@+id/summarize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:text="긴 문자는 핵심만 요약 (쿠폰번호·유효기간 등, 최대 문자 3건)" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

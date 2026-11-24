@@ -22,16 +22,31 @@ import java.util.concurrent.atomic.AtomicInteger
 object Forwarder {
     /** 분할 문자 최대 조각 수. 한글은 조각당 약 67자, 조각마다 문자 1건으로 과금 */
     const val MAX_PARTS = 10
+    /** 이 길이(문자 2건) 이하면 원문 그대로, 넘으면 요약 */
+    private const val FULL_LIMIT = 67 * 2
+    /** 요약본 최대 길이 (문자 3건) */
+    private const val SUMMARY_LIMIT = 67 * 3
     private const val MAX_RETRY = 5
     private const val MAX_INPUT = 3000
 
-    /** 문자 건수를 아끼려고 머리말은 한 줄로 짧게 */
-    fun format(ctx: Context, kind: String, sender: String, tsMillis: Long, slot: Int, body: String): String {
+    /**
+     * 문자 건수를 아끼려고 머리말은 한 줄로 짧게.
+     * 요약 켜짐: 2건 안에 들어가면 원문, 넘으면 핵심 줄만 뽑아 3건 이내로.
+     */
+    fun format(
+        ctx: Context, kind: String, sender: String, tsMillis: Long, slot: Int, body: String, images: Int = 0,
+    ): String {
         val label = Prefs.label(ctx).ifEmpty { Build.MODEL }
         val sim = if (slot >= 0) "/SIM${slot + 1}" else ""
         val k = if (kind == "SMS") "" else " $kind"
         val time = SimpleDateFormat("MM/dd HH:mm", Locale.KOREA).format(Date(tsMillis))
-        return "[$label$sim$k] $sender $time\n$body".take(MAX_INPUT)
+        val header = "[$label$sim$k] $sender $time"
+
+        var full = Summarizer.compact(body).ifEmpty { "(본문 없음)" }
+        if (images > 0) full += "\n(이미지 ${images}개, 서브폰 확인)"
+        val content = if (!Prefs.summarize(ctx) || header.length + 1 + full.length <= FULL_LIMIT) full
+        else Summarizer.summarize(body, SUMMARY_LIMIT - header.length - 1, images)
+        return "$header\n$content".take(MAX_INPUT)
     }
 
     fun slotOfSub(subId: Int): Int {
