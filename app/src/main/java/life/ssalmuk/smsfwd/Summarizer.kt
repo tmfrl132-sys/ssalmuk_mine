@@ -46,13 +46,6 @@ object Summarizer {
      * @param images 첨부 이미지 수 (꼬리표에 표시)
      */
     fun summarize(body: String, maxChars: Int, images: Int = 0): String {
-        val tail = buildString {
-            append("(요약·원문 ${body.length}자")
-            if (images > 0) append("·이미지 ${images}개")
-            append(")")
-        }
-        val budget = maxChars - tail.length - 1
-
         data class Cand(val idx: Int, val text: String, val prio: Int)
 
         val cands = mutableListOf<Cand>()
@@ -78,18 +71,32 @@ object Summarizer {
             if (prio > 0) cands += Cand(i, if (prio == 3) t else cap(t), prio)
         }
 
+        // 핵심 정보(번호·코드·상품명·유효기간 등)가 하나도 없으면 → 앞부분을 잘린 만큼 그대로
+        if (cands.none { it.prio >= 2 }) return head(body, maxChars, images)
+
+        val tail = tail("요약", body, images)
+        val budget = maxChars - tail.length - 1
         val picked = mutableListOf<Cand>()
         var used = 0
         for (c in cands.sortedWith(compareByDescending<Cand> { it.prio }.thenBy { it.idx })) {
             val cost = c.text.length + 1
             if (used + cost <= budget) { picked += c; used += cost }
         }
+        if (picked.isEmpty()) return head(body, maxChars, images)
+        return picked.sortedBy { it.idx }.joinToString("\n") { it.text } + "\n" + tail
+    }
 
-        val text = if (picked.isEmpty()) {
-            compact(body).replace("\n", " ").take(budget.coerceAtLeast(10))
-        } else {
-            picked.sortedBy { it.idx }.joinToString("\n") { it.text }
-        }
-        return "$text\n$tail"
+    private fun tail(kind: String, body: String, images: Int = 0) = buildString {
+        append("($kind·원문 ${body.length}자")
+        if (images > 0) append("·이미지 ${images}개")
+        append(")")
+    }
+
+    /** 규칙에 안 걸리는 문자: [Web발신]·빈 줄만 정리하고 앞에서부터 들어가는 만큼 */
+    fun head(body: String, maxChars: Int, images: Int = 0): String {
+        val tail = tail("앞부분", body, images)
+        val budget = (maxChars - tail.length - 2).coerceAtLeast(10)
+        val c = compact(body)
+        return if (c.length <= budget) c + "\n" + tail else c.take(budget) + "…\n" + tail
     }
 }

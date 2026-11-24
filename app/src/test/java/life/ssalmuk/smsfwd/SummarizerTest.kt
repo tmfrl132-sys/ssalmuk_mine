@@ -73,6 +73,25 @@ class SummarizerTest {
         val s = Summarizer.summarize("가".repeat(500), budget)
         assertTrue(s.length <= budget)
         assertTrue(s.startsWith("가가가"))
+        assertTrue(s.contains("(앞부분·원문 500자)"))
+    }
+
+    /** 회사명·'안내' 제목만 걸리고 번호·상품명 같은 핵심이 없는 공지 → 앞부분 전송 */
+    @Test fun onlyHeadlineMatchedSendsHead() {
+        val notice = """
+[Web발신]
+안녕하세요. KT엠모바일입니다.
+12월 3일(수) 02:00~06:00 시스템 정기 점검으로 셀프개통, 마이페이지 이용이 일시 중단됩니다.
+점검 시간 동안 유심 교체, 번호 이동 신청은 진행되지 않으니 이용에 참고 부탁드립니다.
+더 나은 서비스로 보답하겠습니다. 감사합니다.
+※ 유의사항
+- 점검 시간은 상황에 따라 변경될 수 있습니다.
+""".trimIndent()
+        val s = Summarizer.summarize(notice, budget)
+        println("---- 점검 공지 (${s.length}자) ----\n$s")
+        assertTrue(s.length <= budget)
+        assertTrue(s.contains("12월 3일(수) 02:00~06:00"))
+        assertTrue(s.contains("앞부분"))
     }
 
     @Test fun compactDropsWebTag() {
