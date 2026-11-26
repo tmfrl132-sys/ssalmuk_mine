@@ -1,0 +1,218 @@
+{
+ "key": "wooriwon_EVT0014405_2026-10-15",
+ "url": "https://ssalmuk.life/events/wooriwon/EVT0014405/2026-10-15",
+ "carrier": "wooriwon",
+ "source_id": "EVT0014405",
+ "title": "우리WON모바일 ★선착순 1천명★최대 21만원 수확해가세요!",
+ "period": [
+  "2026-10-15",
+  "2026-10-31"
+ ],
+ "promo_code": null,
+ "referrer": "WZUDCRWP",
+ "cautions": [],
+ "event_title": "★선착순 1천명★최대 21만원 수확해가세요!",
+ "fetched_at": "2026-11-26T09:23:26",
+ "site_basis_join_date": "2026-10-15",
+ "catalog": [
+  {
+   "label": "꿀머니",
+   "payout": "M+2 말일",
+   "monthly": "30,000",
+   "count": "6",
+   "total": "180,000",
+   "target": [
+    "청년드림 5GB+"
+   ],
+   "kind": "기타"
+  },
+  {
+   "label": "웰컴리워드 네이버페이 (1회)",
+   "payout": "M+4 2027-02-18",
+   "monthly": "30,000",
+   "count": "1회",
+   "total": "30,000",
+   "target": [
+    "청년드림 5GB+"
+   ],
+   "kind": "네이버페이"
+  },
+  {
+   "label": "멤버십 쿠폰",
+   "payout": "가입월 1일 1일",
+   "monthly": "5,000",
+   "count": "6",
+   "total": "30,000",
+   "target": [
+    "청년드림 5GB+"
+   ],
+   "kind": "쿠폰"
+  }
+ ],
+ "notes": "(본 유의사항은 요약한 참고사항이며, 정확한 정보는 이벤트 페이지를 참고하시기 바랍니다.)\n사은품 받으려면\n청년드림 5GB+ 신규개통 또는 번호이동\n이 이벤트 페이지에서 응모\n만 19세 이상 39세 이하\n응모부터 혜택지급 종료까지 마케팅·SMS 수신동의 3항목 유지\n지급 전까지 우리WON멤버스 가입 유지\n지급 시점까지 요금제 유지(정지·해지·명의변경·요금제변경 제외)\n1회선만\n네이버페이 3만원은 모두의 통신 이벤트 별도 응모\n주의\n사은품마다 개통·신청 기한이 이벤트 기간과 다를 수 있습니다.\n선착순 1천명 조기마감 시 이후 개통은 혜택 제외\n지급일\n꿀머니: 개통 익익월부터 매월 말일 이내 6개월 (10월 개통 → 12월~27년 5월)\n꿀머니 이월·소급 없음\n네이버페이 3만원은 10월 모두의 통신 웰컴리워드, 2027-02-18(M+4) 지급, 별도 응모\n멤버십 쿠폰 5천원: 매월 1일 발급, 당해 연 3회(10·11·12월) 후 다음 해 3회, 합계 6회\n추가할인 1,500원은 요금제 유지 시 제공",
+ "plans": {
+  "청년드림 5GB+": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 8100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "멤버십 쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 1,
+     "fee": 8100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "멤버십 쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 2,
+     "fee": 8100,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "꿀머니",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "멤버십 쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 3,
+     "fee": 8100,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "꿀머니",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "멤버십 쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 4,
+     "fee": 8100,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "꿀머니",
+       "payout_day": null
+      },
+      {
+       "amount": 30000,
+       "label": "웰컴리워드 네이버페이 (1회)",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "멤버십 쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 5,
+     "fee": 8100,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "꿀머니",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "멤버십 쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 6,
+     "fee": 8100,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "꿀머니",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 7,
+     "fee": 8100,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "꿀머니",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 8,
+     "fee": 8100,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 9,
+     "fee": 8100,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 10,
+     "fee": 8100,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 11,
+     "fee": 8100,
+     "gifts_cash": [],
+     "gifts_extra": []
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 31,
+    "10": 31,
+    "11": 31,
+    "12": 30,
+    "2": 30,
+    "3": 31,
+    "4": 31,
+    "5": 28,
+    "6": 31,
+    "7": 30,
+    "8": 31,
+    "9": 30
+   }
+  }
+ }
+}

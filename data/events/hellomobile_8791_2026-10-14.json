@@ -1,0 +1,325 @@
+{
+ "key": "hellomobile_8791_2026-10-14",
+ "url": "https://ssalmuk.life/events/hellomobile/8791/2026-10-14",
+ "carrier": "hellomobile",
+ "source_id": "8791",
+ "title": "헬로모바일 [타임딜] 10월 돌아온 타임딜 18만원 5GB+1Mbps 매월 최대 3만원!",
+ "period": [
+  "2026-10-14",
+  "2026-10-15"
+ ],
+ "promo_code": "타임딜",
+ "referrer": "LT04465941",
+ "cautions": [],
+ "event_title": "[타임딜] 10월 돌아온 타임딜 18만원 5GB+1Mbps 매월 최대 3만원!",
+ "fetched_at": "2026-11-26T09:23:27",
+ "site_basis_join_date": "2026-10-14",
+ "catalog": [
+  {
+   "label": "프로모션코드 타임딜 사은품",
+   "payout": "30,000원 (26년 11월 23일) 30,000원 (12월 23일) 30,000원 (27년 1월 23일) 30,000원 (27년 2월 23일) 30,000원 (27년 3월 23일) 30,000원 (27년 4월 23일)",
+   "monthly": "30,000",
+   "count": "6",
+   "total": "180,000",
+   "target": [
+    "공통"
+   ],
+   "kind": "네이버페이"
+  },
+  {
+   "label": "hy프레딧 할인쿠폰 (1회)",
+   "payout": "가입월",
+   "monthly": "4장",
+   "count": "1회",
+   "total": "—",
+   "target": [
+    "공통"
+   ],
+   "kind": "쿠폰 · 현물보너스"
+  },
+  {
+   "label": "야쿠르트X.O 무료교환쿠폰 (1회)",
+   "payout": "가입월",
+   "monthly": "2개",
+   "count": "1회",
+   "total": "—",
+   "target": [
+    "공통"
+   ],
+   "kind": "쿠폰 · 현물보너스"
+  }
+ ],
+ "notes": "(본 유의사항은 요약한 참고사항이며, 정확한 정보는 이벤트 페이지를 참고하시기 바랍니다.)\n사은품 받으려면\n가입 신청서 내 프로모션 코드 [타임딜] 입력\n기간 내 개통 진행\n주의\n사은품마다 개통·신청 기한이 이벤트 기간과 다를 수 있습니다.\n기간 내 개통 진행\n지급일\n네이버페이 타임딜 사은품: 1회차 26년 11월 23일, 2~6회차 매월 23일 지급",
+ "plans": {
+  "The 착한 데이터 유심 300MB": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "hy프레딧 할인쿠폰 (1회)",
+       "payout_day": null
+      },
+      {
+       "label": "야쿠르트X.O 무료교환쿠폰 (1회)",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 2,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 3,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 4,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 5,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 6,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 7,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 8,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 9,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 10,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 11,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 31,
+    "10": 31,
+    "11": 31,
+    "12": 30,
+    "2": 30,
+    "3": 31,
+    "4": 31,
+    "5": 28,
+    "6": 31,
+    "7": 30,
+    "8": 31,
+    "9": 30
+   }
+  },
+  "보편 안심 유심 5GB 100분": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 13500,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "hy프레딧 할인쿠폰 (1회)",
+       "payout_day": null
+      },
+      {
+       "label": "야쿠르트X.O 무료교환쿠폰 (1회)",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 13500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 2,
+     "fee": 13500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 3,
+     "fee": 13500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 4,
+     "fee": 13500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 5,
+     "fee": 13500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 6,
+     "fee": 13500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "프로모션코드 타임딜 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 7,
+     "fee": 13500,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 8,
+     "fee": 13500,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 9,
+     "fee": 13500,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 10,
+     "fee": 13500,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 11,
+     "fee": 13500,
+     "gifts_cash": [],
+     "gifts_extra": []
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 31,
+    "10": 31,
+    "11": 31,
+    "12": 30,
+    "2": 30,
+    "3": 31,
+    "4": 31,
+    "5": 28,
+    "6": 31,
+    "7": 30,
+    "8": 31,
+    "9": 30
+   }
+  }
+ }
+}

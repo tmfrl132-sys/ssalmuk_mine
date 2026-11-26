@@ -105,7 +105,10 @@ def parse_event(src, url):
     if nm:
         notes = re.sub(r"\n\s*\n+", "\n", html.unescape(re.sub(r"<[^>]+>", "\n", nm.group(1)))).strip()
 
-    code = re.search(r"코드 ([^\s<]+)", _text(src[src.find("<main"):src.find("요약")]) if "<main" in src else "")
+    code = re.search(r'class="event-code">(.*?)</span>', src)
+    referrer = re.search(r'class="referrer-code">(.*?)</span>', src)
+    cautions = [_text(x) for x in re.findall(r'<div class="caution">(.*?)</div>', src, flags=re.S)]
+    ev_title = re.search(r'<div class="event-top">\s*<strong>(.*?)</strong>', src, flags=re.S)
     plans = {}
     for name, rows in months.items():
         cancel_day = {}
@@ -127,7 +130,10 @@ def parse_event(src, url):
         "source_id": m.group(2),
         "title": _text(title.group(1)).split(" · ")[0].replace(" 사은품 순이익", "") if title else key,
         "period": list(period.groups()) if period else None,
-        "promo_code": code.group(1) if code else None,
+        "promo_code": _text(code.group(1)) if code else None,
+        "referrer": _text(referrer.group(1)) if referrer else None,
+        "cautions": cautions,
+        "event_title": _text(ev_title.group(1)) if ev_title else None,
         "fetched_at": dt.datetime.now().isoformat(timespec="seconds"),
         "site_basis_join_date": next(iter(next(iter(opts.values())).values()))["join_date"] if opts else None,
         "catalog": catalog,
@@ -166,6 +172,123 @@ def load_event(url):
     if not path.exists():
         return fetch(url)
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+CARRIER_NAMES = {"hellomobile": "헬로모바일", "ktmmobile": "KT M모바일", "umobile": "유모바일",
+                 "wooriwon": "우리WON모바일", "sk7mobile": "SK 7모바일", "shakemobile": "쉐이크모바일"}
+
+
+def sitemap_urls():
+    req = urllib.request.Request("https://ssalmuk.life/sitemap.xml", headers={"User-Agent": "Mozilla/5.0 (ssalmuk-mine personal)"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        xml = r.read().decode("utf-8")
+    return [u for u in re.findall(r"<loc>(.*?)</loc>", xml) if URL_RE.match(u)]
+
+
+def sync(urls=None, refresh_days=3):
+    """사이트맵의 모든 이벤트를 스냅샷. 종료 후 refresh_days 지난 이벤트는 기존 스냅샷 유지."""
+    today = dt.date.today()
+    done, errors = [], []
+    for u in (urls or sitemap_urls()):
+        key, _ = event_key(u)
+        path = EVENT_DIR / f"{key}.json"
+        force = True
+        if path.exists():
+            old = json.loads(path.read_text(encoding="utf-8"))
+            end = (old.get("period") or [None, None])[1]
+            if end and parse_date(end) < today - dt.timedelta(days=refresh_days):
+                force = False
+        try:
+            fetch(u, force=force)
+            done.append(key)
+        except Exception as e:  # 개별 이벤트 실패는 건너뜀
+            errors.append(f"{key}: {e}")
+    return done, errors
+
+
+def _sections(notes):
+    """유의사항 텍스트를 '사은품 받으려면' / '주의' / '지급일' 구역으로 나눔."""
+    out, cur = {}, None
+    for ln in [x.strip() for x in (notes or "").split("\n") if x.strip()]:
+        if ln in ("사은품 받으려면", "주의", "지급일"):
+            cur = ln; out[cur] = []; continue
+        if ln.startswith("(본 유의사항"):
+            continue
+        if cur:
+            out[cur].append(ln)
+    return out
+
+
+def export_event(ev):
+    """앱 DB용 압축 형식."""
+    sec = _sections(ev.get("notes", ""))
+    plans = {}
+    for name, p in ev["plans"].items():
+        ms = p["months"]
+        last = max([i for i, m in enumerate(ms) if m["gifts_cash"]] or [0])
+        ms = ms[:max(last + 2, 13)]
+        plans[name] = {
+            "fee": ms[1]["fee"] if len(ms) > 1 else ms[0]["fee"],
+            "cd": {k: v for k, v in p.get("cancel_day_by_hold", {}).items() if v},
+            "m": [[m["fee"], [[g["label"], g["amount"], g.get("payout_day")] for g in m["gifts_cash"]]] for m in ms],
+            "ig": p.get("interval_gifts", []),
+        }
+    return {
+        "key": ev["key"], "url": ev["url"], "carrier": ev["carrier"],
+        "carrierName": CARRIER_NAMES.get(ev["carrier"], ev["carrier"]),
+        "title": ev.get("event_title") or ev["title"], "period": ev.get("period"),
+        "code": ev.get("promo_code"), "referrer": ev.get("referrer"), "cautions": ev.get("cautions", []),
+        "fetched": ev.get("fetched_at"), "manual": bool(ev.get("manual")),
+        "conditions": sec.get("사은품 받으려면", []), "warnings": sec.get("주의", []), "payNotes": sec.get("지급일", []),
+        "rawNotes": "" if sec else ev.get("notes", ""),
+        "catalog": [{"l": c["label"], "kind": c.get("kind", ""), "payout": c.get("payout", ""),
+                     "count": c.get("count", ""), "target": c.get("target", [])} for c in ev.get("catalog", [])],
+        "plans": plans,
+    }
+
+
+def export_all(out_dir):
+    out = Path(out_dir) / "events"
+    out.mkdir(parents=True, exist_ok=True)
+    index = []
+    for f in sorted(EVENT_DIR.glob("*.json")):
+        ev = export_event(json.loads(f.read_text(encoding="utf-8")))
+        doc_id = re.sub(r"[^A-Za-z0-9_\-.~:@+]", "_", ev["key"])
+        (out / f"{doc_id}.json").write_text(json.dumps(ev, ensure_ascii=False), encoding="utf-8")
+        best = None
+        for name, p in ev["plans"].items():
+            gift8 = sum(a for fee, gs in p["m"][:8] for _, a, _ in gs)
+            fee8 = sum(fee for fee, _ in p["m"][:8])
+            if best is None or gift8 - fee8 > best[1]:
+                best = (name, gift8 - fee8, p["fee"])
+        index.append({"id": doc_id, "key": ev["key"], "url": ev["url"], "carrier": ev["carrier"], "carrierName": ev["carrierName"],
+                      "title": ev["title"], "period": ev["period"], "code": ev["code"], "manual": ev["manual"],
+                      "nPlans": len(ev["plans"]), "bestPlan": best[0] if best else None,
+                      "bestFee": best[2] if best else None, "best8": best[1] if best else None})
+    index.sort(key=lambda x: (x["period"] or ["", ""])[1], reverse=True)
+    idx = {"updated": dt.datetime.now().isoformat(timespec="seconds"), "events": index}
+    (Path(out_dir) / "index.json").write_text(json.dumps(idx, ensure_ascii=False), encoding="utf-8")
+    return idx
+
+
+def export_lines(out_dir):
+    """lines.json → 앱 DB 회선 문서 (가입 시점 이벤트 스냅샷 포함)."""
+    out = Path(out_dir) / "lines"
+    out.mkdir(parents=True, exist_ok=True)
+    for i, l in enumerate(load_lines(), 1):
+        ev = export_event(line_event(l))
+        plan = dict(ev["plans"][l["plan"]], name=l["plan"])
+        snap = {k: ev[k] for k in ("url", "title", "carrier", "carrierName", "period", "code", "referrer",
+                                   "conditions", "warnings", "payNotes", "cautions", "catalog")}
+        snap.update({"eventId": ev["key"], "plan": plan, "snapAt": ev["fetched"]})
+        doc = {"name": l["name"], "snap": snap, "join": l["join_date"], "excl": l.get("exclude_gifts", []),
+               "memo": l.get("memo", ""), "recv": {}, "checks": {}, "created": f"{l['join_date']}T00:00:0{i}",
+               "todos": [dict(t, done=False) for t in l.get("todos", [])]}
+        if l.get("cancel_date"):
+            doc["cancel"] = l["cancel_date"]
+        else:
+            doc["hold"] = l["hold_months"]
+        (out / f"line{i}.json").write_text(json.dumps(doc, ensure_ascii=False), encoding="utf-8")
 
 
 # ---------------------------------------------------------------- 회선
@@ -388,6 +511,8 @@ def main(argv=None):
     a.add_argument("--join", required=True); a.add_argument("--hold", type=int); a.add_argument("--cancel")
     a.add_argument("--memo", default="")
     sub.add_parser("list")
+    sy = sub.add_parser("sync"); sy.add_argument("--export", default="data/export")
+    sy.add_argument("urls", nargs="*")
     r = sub.add_parser("report"); r.add_argument("--out"); r.add_argument("--cash-only", action="store_true"); r.add_argument("--today")
     h = sub.add_parser("html"); h.add_argument("--out", default="reports/dashboard.html"); h.add_argument("--today")
     u = sub.add_parser("upcoming"); u.add_argument("--days", type=int, default=45); u.add_argument("--today")
@@ -418,6 +543,14 @@ def main(argv=None):
         print(f"저장: {args.name}")
         return
 
+    if args.cmd == "sync":
+        done, errors = sync(args.urls or None)
+        idx = export_all(args.export)
+        export_lines(args.export)
+        print(f"동기화 {len(done)}건, 실패 {len(errors)}건, 인덱스 {len(idx['events'])}건 → {args.export}")
+        for e in errors:
+            print("  실패:", e)
+        return
     lines = load_lines()
     if args.cmd == "list":
         for l in lines:

@@ -1,0 +1,602 @@
+{
+ "key": "ktmmobile_1856_2026-10-16",
+ "url": "https://ssalmuk.life/events/ktmmobile/1856/2026-10-16",
+ "carrier": "ktmmobile",
+ "source_id": "1856",
+ "title": "KT M모바일 [갤럭시자급제] 매월 3만원x8개월, 10월 최대 45만원!",
+ "period": [
+  "2026-10-16",
+  "2026-10-31"
+ ],
+ "promo_code": "M",
+ "referrer": "UI2492",
+ "cautions": [],
+ "event_title": "[갤럭시자급제] 매월 3만원x8개월, 10월 최대 45만원!",
+ "fetched_at": "2026-11-26T09:23:22",
+ "site_basis_join_date": "2026-10-16",
+ "catalog": [
+  {
+   "label": "자급제 등록 사은품",
+   "payout": "M+2 월부터 매월 말",
+   "monthly": "30,000",
+   "count": "8",
+   "total": "240,000",
+   "target": [
+    "5,000원 이상"
+   ],
+   "kind": "라이프케어 · 5,000원 이상"
+  },
+  {
+   "label": "프로모션코드 셀프개통 사은품",
+   "payout": "M+2 월부터 매월 말",
+   "monthly": "20,000",
+   "count": "8",
+   "total": "160,000",
+   "target": [
+    "5,000원 이상"
+   ],
+   "kind": "라이프케어 · 5,000원 이상"
+  },
+  {
+   "label": "친구추천 사은품",
+   "payout": "M+2 월부터 매월 말",
+   "monthly": "5,000",
+   "count": "6",
+   "total": "30,000",
+   "target": [
+    "5,000원 이상"
+   ],
+   "kind": "라이프케어 · 5,000원 이상"
+  },
+  {
+   "label": "KT인터넷 추가 가입 사은품 (1회)",
+   "payout": "M+2 월 말",
+   "monthly": "—",
+   "count": "1회",
+   "total": "50,000",
+   "target": [
+    "공통"
+   ],
+   "kind": "라이프케어"
+  },
+  {
+   "label": "바로배송유심 / 바로유심 가입 사은품",
+   "payout": "10,000원 (2027-02 중순) 10,000원 (2027-05 중순)",
+   "monthly": "10,000",
+   "count": "2",
+   "total": "20,000",
+   "target": [
+    "공통"
+   ],
+   "kind": "네이버페이"
+  },
+  {
+   "label": "PAY쿠폰",
+   "payout": "M+1",
+   "monthly": "5,000",
+   "count": "12",
+   "total": "60,000",
+   "target": [
+    "모두다 맘껏 7GB+(PAY쿠폰 5000P)"
+   ],
+   "kind": "네이버페이"
+  }
+ ],
+ "notes": "(본 유의사항은 요약한 참고사항이며, 정확한 정보는 이벤트 페이지를 참고하시기 바랍니다.)\n사은품 받으려면\n가입 신청 단계에서 이벤트 코드 M 입력\n사은품 지급 전까지 프로모션 대상 자급제 단말 등록 및 유지\n가입 신청 시 마지막 단계의 추천인 ID 정확히 입력\n기본 사은품은 가입 과정 마지막 단계에서 반드시 선택\n지급일\n자급제 등록 및 이벤트코드 사은품: M+2월부터 매월 말 지급\n친구추천 사은품: M+2월부터 매월 말 지급\nKT인터넷 및 키즈/시니어 추가 혜택: M+2월 말 일괄 지급\n모바일 상품권은 유효기간이 30일\nPAY쿠폰 5,000원: M+1부터 12개월\n바로배송유심/바로유심 사은품: 1만원(2027년 2월 중순), 1만원(2027년 5월 중순)",
+ "plans": {
+  "모두다 맘껏 7GB+(PAY쿠폰 5000P)": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 18500,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 1,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 2,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 3,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 4,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 10000,
+       "label": "바로배송유심 / 바로유심 가입 사은품",
+       "payout_day": 15
+      },
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 5,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 6,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 7,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 10000,
+       "label": "바로배송유심 / 바로유심 가입 사은품",
+       "payout_day": 15
+      },
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 8,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 9,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 10,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 11,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 12,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "PAY쿠폰",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 31,
+    "10": 31,
+    "11": 31,
+    "12": 30,
+    "13": 31,
+    "2": 30,
+    "3": 31,
+    "4": 31,
+    "5": 28,
+    "6": 31,
+    "7": 30,
+    "8": 31,
+    "9": 30
+   }
+  },
+  "모두다 맘껏 7GB+(밀리의서재FREE)": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 16300,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 1,
+     "fee": 16300,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 2,
+     "fee": 16300,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 3,
+     "fee": 16300,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 4,
+     "fee": 16300,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 10000,
+       "label": "바로배송유심 / 바로유심 가입 사은품",
+       "payout_day": 15
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 5,
+     "fee": 16300,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 6,
+     "fee": 16300,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 7,
+     "fee": 16300,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 10000,
+       "label": "바로배송유심 / 바로유심 가입 사은품",
+       "payout_day": 15
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 8,
+     "fee": 16300,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 9,
+     "fee": 16300,
+     "gifts_cash": [
+      {
+       "amount": 30000,
+       "label": "자급제 등록 사은품",
+       "payout_day": null
+      },
+      {
+       "amount": 20000,
+       "label": "프로모션코드 셀프개통 사은품",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 10,
+     "fee": 16300,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 11,
+     "fee": 16300,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 12,
+     "fee": 16300,
+     "gifts_cash": [],
+     "gifts_extra": []
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 31,
+    "10": 31,
+    "11": 31,
+    "12": 30,
+    "13": 31,
+    "2": 30,
+    "3": 31,
+    "4": 31,
+    "5": 28,
+    "6": 31,
+    "7": 30,
+    "8": 31,
+    "9": 30
+   }
+  }
+ }
+}

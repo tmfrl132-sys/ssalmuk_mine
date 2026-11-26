@@ -1,0 +1,2796 @@
+{
+ "key": "hellomobile_8231_2026-11-02",
+ "url": "https://ssalmuk.life/events/hellomobile/8231/2026-11-02",
+ "carrier": "hellomobile",
+ "source_id": "8231",
+ "title": "헬로모바일 [알뜰폰요금제] 지금 현대홈쇼핑 요금제 가입 시 추가 5만원 일시증정!",
+ "period": [
+  "2026-11-02",
+  "2026-11-09"
+ ],
+ "promo_code": "셀프개통",
+ "referrer": "LT04465941",
+ "cautions": [
+  "주의: Hmall적립금 포함"
+ ],
+ "event_title": "[알뜰폰요금제] 지금 현대홈쇼핑 요금제 가입 시 추가 5만원 일시증정!",
+ "fetched_at": "2026-11-26T09:23:13",
+ "site_basis_join_date": "2026-11-02",
+ "catalog": [
+  {
+   "label": "현대홈쇼핑 Hmall 적립금",
+   "payout": "익월부터 매월 22일",
+   "monthly": "5,000",
+   "count": "24",
+   "total": "120,000",
+   "target": [
+    "현대홈쇼핑 유심 1GB",
+    "현대홈쇼핑 유심 7GB",
+    "현대홈쇼핑 데이터 더주는 유심 7GB",
+    "현대홈쇼핑 유심 100GB",
+    "현대홈쇼핑 유심 11GB"
+   ],
+   "kind": "라이프케어"
+  },
+  {
+   "label": "네이버페이 (프로모션코드 셀프개통)",
+   "payout": "M+2 27년 1월 23일 이후 매월 23일",
+   "monthly": "30,000",
+   "count": "6",
+   "total": "180,000",
+   "target": [
+    "15,900원 이상"
+   ],
+   "kind": "네이버페이 · 15,900원 이상"
+  },
+  {
+   "label": "친구추천 피추천인 네이버페이 #2",
+   "payout": "26년 1월 부터 매월 23일 (가입월)",
+   "monthly": "5,000",
+   "count": "6",
+   "total": "30,000",
+   "target": [
+    "15,900원 이상"
+   ],
+   "kind": "네이버페이 · 15,900원 이상"
+  },
+  {
+   "label": "친구추천 피추천인 네이버페이 #1",
+   "payout": "26년 1월 부터 매월 23일 (가입월)",
+   "monthly": "2,000",
+   "count": "6",
+   "total": "12,000",
+   "target": [
+    "15,900원 미만"
+   ],
+   "kind": "네이버페이 · 15,900원 미만"
+  },
+  {
+   "label": "현대홈쇼핑 추가증정 네이버페이 (1회)",
+   "payout": "M+2 27년 1월 23일",
+   "monthly": "50,000",
+   "count": "1회",
+   "total": "50,000",
+   "target": [
+    "현대홈쇼핑 유심 1GB",
+    "현대홈쇼핑 유심 7GB",
+    "현대홈쇼핑 데이터 더주는 유심 7GB",
+    "현대홈쇼핑 유심 100GB",
+    "현대홈쇼핑 유심 11GB"
+   ],
+   "kind": "네이버페이"
+  },
+  {
+   "label": "현대홈쇼핑 Hmall 할인쿠폰",
+   "payout": "익월부터 매월 22일",
+   "monthly": "—",
+   "count": "24",
+   "total": "—",
+   "target": [
+    "현대홈쇼핑 유심 1GB",
+    "현대홈쇼핑 유심 7GB",
+    "현대홈쇼핑 데이터 더주는 유심 7GB",
+    "현대홈쇼핑 유심 100GB",
+    "현대홈쇼핑 유심 11GB"
+   ],
+   "kind": "쿠폰 · 현물보너스"
+  },
+  {
+   "label": "프레딧 할인쿠폰",
+   "payout": "M+1 12월 3주차",
+   "monthly": "—",
+   "count": "4",
+   "total": "—",
+   "target": [
+    "15,900원 이상"
+   ],
+   "kind": "쿠폰 · 현물보너스 · 15,900원 이상"
+  },
+  {
+   "label": "야쿠르트 X.0 무료교환쿠폰 (1회)",
+   "payout": "M+1 12월 3주차",
+   "monthly": "2개",
+   "count": "1회",
+   "total": "—",
+   "target": [
+    "15,900원 이상"
+   ],
+   "kind": "쿠폰 · 현물보너스 · 15,900원 이상"
+  },
+  {
+   "label": "데이터 더주는 유심 7GB 추가 데이터",
+   "payout": "가입월",
+   "monthly": "10GB",
+   "count": "24",
+   "total": "—",
+   "target": [
+    "현대홈쇼핑 데이터 더주는 유심 7GB"
+   ],
+   "kind": "기타 · 현물보너스"
+  }
+ ],
+ "notes": "(본 유의사항은 요약한 참고사항이며, 정확한 정보는 이벤트 페이지를 참고하시기 바랍니다.)\n사은품 받으려면\n가입 시 가입신청서 내 프로모션 코드 '셀프개통' 입력 및 실제 셀프개통 진행\n개통 후 결합신청 링크를 통해 결합신청\n헬로모바일 개통월 기준 익월 14일 이내 현대홈쇼핑(Hmall) 회원가입 완료\n유심/eSIM 개통 익월 휴대폰 지원금 쿠폰 발행 후 3개월 내 쿠폰 코드 입력 및 휴대폰 개통 완료\n주의\n사은품마다 개통·신청 기한이 이벤트 기간과 다를 수 있습니다.\n현대홈쇼핑 요금제 가입 시 5만원 추가증정 안내사항: 10/26~10/31 개통\n(유의사항이 업데이트 안된걸로 보이며, 본 이벤트 기간동안 적용될것으로 보임.)\n프로모션 코드 [셀프개통] 입력 사은품 안내: 11/2~11/15 개통\n지급일\n결합 데이터 1회차: 개통일 익일 지급, 2~24개월차: 매월 1일 지급\n현대홈쇼핑(Hmall) 적립금 및 할인쿠폰: 익월부터 매월 22일경 지급\n친구추천 및 프로모션 코드 셀프개통 네이버페이: 27년 1월 23일 이후 매월 23일 발송\n프레딧 할인쿠폰 1개월차: 12월 3주차, 2~4개월차: 매월 3주차 발송\n휴대폰 지원금 쿠폰: 유심/eSIM 개통 익월 23일 발행, 휴대폰 개통 완료 시 익월 네이버페이 일시 지급\n현대홈쇼핑 추가증정 네이버페이: '27년 1월 23일 일시증정",
+ "plans": {
+  "현대홈쇼핑 데이터 더주는 유심 7GB": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      },
+      {
+       "label": "야쿠르트 X.0 무료교환쿠폰 (1회)",
+       "payout_day": null
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 2,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      },
+      {
+       "amount": 50000,
+       "label": "현대홈쇼핑 추가증정 네이버페이 (1회)",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 3,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 4,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 5,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 6,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 7,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 8,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 9,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 10,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 11,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 12,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 13,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 14,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 15,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 16,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 17,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 18,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 19,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 20,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 21,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 22,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 23,
+     "fee": 21600,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "데이터 더주는 유심 7GB 추가 데이터",
+       "payout_day": null
+      }
+     ]
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 30,
+    "10": 31,
+    "11": 30,
+    "12": 31,
+    "13": 30,
+    "14": 31,
+    "15": 31,
+    "16": 29,
+    "17": 31,
+    "18": 30,
+    "19": 31,
+    "2": 31,
+    "20": 30,
+    "21": 31,
+    "22": 31,
+    "23": 30,
+    "24": 31,
+    "3": 31,
+    "4": 28,
+    "5": 31,
+    "6": 30,
+    "7": 31,
+    "8": 30,
+    "9": 31
+   }
+  },
+  "현대홈쇼핑 유심 100GB": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      },
+      {
+       "label": "야쿠르트 X.0 무료교환쿠폰 (1회)",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 2,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      },
+      {
+       "amount": 50000,
+       "label": "현대홈쇼핑 추가증정 네이버페이 (1회)",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 3,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 4,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 5,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 6,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 7,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 8,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 9,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 10,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 11,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 12,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 13,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 14,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 15,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 16,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 17,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 18,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 19,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 20,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 21,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 22,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 23,
+     "fee": 42400,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 30,
+    "10": 31,
+    "11": 30,
+    "12": 31,
+    "13": 30,
+    "14": 31,
+    "15": 31,
+    "16": 29,
+    "17": 31,
+    "18": 30,
+    "19": 31,
+    "2": 31,
+    "20": 30,
+    "21": 31,
+    "22": 31,
+    "23": 30,
+    "24": 31,
+    "3": 31,
+    "4": 28,
+    "5": 31,
+    "6": 30,
+    "7": 31,
+    "8": 30,
+    "9": 31
+   }
+  },
+  "현대홈쇼핑 유심 11GB": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      },
+      {
+       "label": "야쿠르트 X.0 무료교환쿠폰 (1회)",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 2,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      },
+      {
+       "amount": 50000,
+       "label": "현대홈쇼핑 추가증정 네이버페이 (1회)",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 3,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 4,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 5,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 6,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 7,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 8,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 9,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 10,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 11,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 12,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 13,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 14,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 15,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 16,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 17,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 18,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 19,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 20,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 21,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 22,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 23,
+     "fee": 37190,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 30,
+    "10": 31,
+    "11": 30,
+    "12": 31,
+    "13": 30,
+    "14": 31,
+    "15": 31,
+    "16": 29,
+    "17": 31,
+    "18": 30,
+    "19": 31,
+    "2": 31,
+    "20": 30,
+    "21": 31,
+    "22": 31,
+    "23": 30,
+    "24": 31,
+    "3": 31,
+    "4": 28,
+    "5": 31,
+    "6": 30,
+    "7": 31,
+    "8": 30,
+    "9": 31
+   }
+  },
+  "현대홈쇼핑 유심 1GB": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 11700,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 2000,
+       "label": "친구추천 피추천인 네이버페이 #1",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 11700,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 2000,
+       "label": "친구추천 피추천인 네이버페이 #1",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 2,
+     "fee": 11700,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 2000,
+       "label": "친구추천 피추천인 네이버페이 #1",
+       "payout_day": 23
+      },
+      {
+       "amount": 50000,
+       "label": "현대홈쇼핑 추가증정 네이버페이 (1회)",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 3,
+     "fee": 11700,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 2000,
+       "label": "친구추천 피추천인 네이버페이 #1",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 4,
+     "fee": 11700,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 2000,
+       "label": "친구추천 피추천인 네이버페이 #1",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 5,
+     "fee": 11700,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 2000,
+       "label": "친구추천 피추천인 네이버페이 #1",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 6,
+     "fee": 11700,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 7,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 8,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 9,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 10,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 11,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 12,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 13,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 14,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 15,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 16,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 17,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 18,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 19,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 20,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 21,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 22,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 23,
+     "fee": 15750,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 30,
+    "10": 31,
+    "11": 30,
+    "12": 31,
+    "13": 30,
+    "14": 31,
+    "15": 31,
+    "16": 29,
+    "17": 31,
+    "18": 30,
+    "19": 31,
+    "2": 31,
+    "20": 30,
+    "21": 31,
+    "22": 31,
+    "23": 30,
+    "24": 31,
+    "3": 31,
+    "4": 28,
+    "5": 31,
+    "6": 30,
+    "7": 31,
+    "8": 30,
+    "9": 31
+   }
+  },
+  "현대홈쇼핑 유심 7GB": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      },
+      {
+       "label": "야쿠르트 X.0 무료교환쿠폰 (1회)",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 2,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      },
+      {
+       "amount": 50000,
+       "label": "현대홈쇼핑 추가증정 네이버페이 (1회)",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 3,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 4,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      },
+      {
+       "label": "프레딧 할인쿠폰",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 5,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      },
+      {
+       "amount": 5000,
+       "label": "친구추천 피추천인 네이버페이 #2",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 6,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 7,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      },
+      {
+       "amount": 30000,
+       "label": "네이버페이 (프로모션코드 셀프개통)",
+       "payout_day": 23
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 8,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 9,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 10,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 11,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 12,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 13,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 14,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 15,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 16,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 17,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 18,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 19,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 20,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 21,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 22,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    },
+    {
+     "after_months": 23,
+     "fee": 20100,
+     "gifts_cash": [
+      {
+       "amount": 5000,
+       "label": "현대홈쇼핑 Hmall 적립금",
+       "payout_day": 22
+      }
+     ],
+     "gifts_extra": [
+      {
+       "label": "현대홈쇼핑 Hmall 할인쿠폰",
+       "payout_day": 22
+      }
+     ]
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 30,
+    "10": 31,
+    "11": 30,
+    "12": 31,
+    "13": 30,
+    "14": 31,
+    "15": 31,
+    "16": 29,
+    "17": 31,
+    "18": 30,
+    "19": 31,
+    "2": 31,
+    "20": 30,
+    "21": 31,
+    "22": 31,
+    "23": 30,
+    "24": 31,
+    "3": 31,
+    "4": 28,
+    "5": 31,
+    "6": 30,
+    "7": 31,
+    "8": 30,
+    "9": 31
+   }
+  }
+ }
+}

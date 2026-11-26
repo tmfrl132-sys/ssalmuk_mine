@@ -1,0 +1,482 @@
+{
+ "key": "hellomobile_9013_2026-11-19",
+ "url": "https://ssalmuk.life/events/hellomobile/9013/2026-11-19",
+ "carrier": "hellomobile",
+ "source_id": "9013",
+ "title": "헬로모바일 [역대급 타임딜] 11월 블프기념 타임딜! 매월 4.5만원X6개월!",
+ "period": [
+  "2026-11-19",
+  "2026-11-20"
+ ],
+ "promo_code": "타임딜",
+ "referrer": "LT04465941",
+ "cautions": [],
+ "event_title": "[역대급 타임딜] 11월 블프기념 타임딜! 매월 4.5만원X6개월!",
+ "fetched_at": "2026-11-26T09:23:10",
+ "site_basis_join_date": "2026-11-19",
+ "catalog": [
+  {
+   "label": "타임딜 프로모션코드 사은품 #1",
+   "payout": "M+1 26년 12월 23일",
+   "monthly": "35,000",
+   "count": "6",
+   "total": "210,000",
+   "target": [
+    "The 착한 데이터 유심 300MB"
+   ],
+   "kind": "네이버페이"
+  },
+  {
+   "label": "타임딜 프로모션코드 사은품 #2",
+   "payout": "M+1 26년 12월 23일",
+   "monthly": "40,000",
+   "count": "6",
+   "total": "240,000",
+   "target": [
+    "The 착한 데이터 유심 9GB 3000분"
+   ],
+   "kind": "네이버페이"
+  },
+  {
+   "label": "타임딜 프로모션코드 사은품 #3",
+   "payout": "M+1 26년 12월 23일",
+   "monthly": "45,000",
+   "count": "6",
+   "total": "270,000",
+   "target": [
+    "보편 안심 유심 10GB 100분"
+   ],
+   "kind": "네이버페이"
+  },
+  {
+   "label": "hy 프레딧 할인쿠폰 (1회)",
+   "payout": "가입월",
+   "monthly": "—",
+   "count": "1회",
+   "total": "—",
+   "target": [
+    "공통"
+   ],
+   "kind": "쿠폰 · 현물보너스"
+  },
+  {
+   "label": "야쿠르트 무료교환쿠폰 (1회)",
+   "payout": "가입월",
+   "monthly": "2개",
+   "count": "1회",
+   "total": "—",
+   "target": [
+    "공통"
+   ],
+   "kind": "기타 · 현물보너스"
+  }
+ ],
+ "notes": "(본 유의사항은 요약한 참고사항이며, 정확한 정보는 이벤트 페이지를 참고하시기 바랍니다.)\n사은품 받으려면\n가입신청서 작성 시 프로모션 코드 [타임딜] 입력\n기간 내 개통 진행\n주의\n사은품마다 개통·신청 기한이 이벤트 기간과 다를 수 있습니다.\n기간 내 개통 진행\n지급일\n네이버페이 혜택 지급시기 : 1회차 26년 12월 23일, 2~6회차 매월 23일",
+ "plans": {
+  "The 착한 데이터 유심 300MB": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "hy 프레딧 할인쿠폰 (1회)",
+       "payout_day": null
+      },
+      {
+       "label": "야쿠르트 무료교환쿠폰 (1회)",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 35000,
+       "label": "타임딜 프로모션코드 사은품 #1",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 2,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 35000,
+       "label": "타임딜 프로모션코드 사은품 #1",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 3,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 35000,
+       "label": "타임딜 프로모션코드 사은품 #1",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 4,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 35000,
+       "label": "타임딜 프로모션코드 사은품 #1",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 5,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 35000,
+       "label": "타임딜 프로모션코드 사은품 #1",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 6,
+     "fee": 14900,
+     "gifts_cash": [
+      {
+       "amount": 35000,
+       "label": "타임딜 프로모션코드 사은품 #1",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 7,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 8,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 9,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 10,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 11,
+     "fee": 14900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 30,
+    "10": 31,
+    "11": 30,
+    "12": 31,
+    "2": 31,
+    "3": 31,
+    "4": 28,
+    "5": 31,
+    "6": 30,
+    "7": 31,
+    "8": 30,
+    "9": 31
+   }
+  },
+  "The 착한 데이터 유심 9GB 3000분": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "hy 프레딧 할인쿠폰 (1회)",
+       "payout_day": null
+      },
+      {
+       "label": "야쿠르트 무료교환쿠폰 (1회)",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 40000,
+       "label": "타임딜 프로모션코드 사은품 #2",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 2,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 40000,
+       "label": "타임딜 프로모션코드 사은품 #2",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 3,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 40000,
+       "label": "타임딜 프로모션코드 사은품 #2",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 4,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 40000,
+       "label": "타임딜 프로모션코드 사은품 #2",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 5,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 40000,
+       "label": "타임딜 프로모션코드 사은품 #2",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 6,
+     "fee": 16900,
+     "gifts_cash": [
+      {
+       "amount": 40000,
+       "label": "타임딜 프로모션코드 사은품 #2",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 7,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 8,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 9,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 10,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 11,
+     "fee": 16900,
+     "gifts_cash": [],
+     "gifts_extra": []
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 30,
+    "10": 31,
+    "11": 30,
+    "12": 31,
+    "2": 31,
+    "3": 31,
+    "4": 28,
+    "5": 31,
+    "6": 30,
+    "7": 31,
+    "8": 30,
+    "9": 31
+   }
+  },
+  "보편 안심 유심 10GB 100분": {
+   "months": [
+    {
+     "after_months": 0,
+     "fee": 18500,
+     "gifts_cash": [],
+     "gifts_extra": [
+      {
+       "label": "hy 프레딧 할인쿠폰 (1회)",
+       "payout_day": null
+      },
+      {
+       "label": "야쿠르트 무료교환쿠폰 (1회)",
+       "payout_day": null
+      }
+     ]
+    },
+    {
+     "after_months": 1,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 45000,
+       "label": "타임딜 프로모션코드 사은품 #3",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 2,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 45000,
+       "label": "타임딜 프로모션코드 사은품 #3",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 3,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 45000,
+       "label": "타임딜 프로모션코드 사은품 #3",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 4,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 45000,
+       "label": "타임딜 프로모션코드 사은품 #3",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 5,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 45000,
+       "label": "타임딜 프로모션코드 사은품 #3",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 6,
+     "fee": 18500,
+     "gifts_cash": [
+      {
+       "amount": 45000,
+       "label": "타임딜 프로모션코드 사은품 #3",
+       "payout_day": null
+      }
+     ],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 7,
+     "fee": 18500,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 8,
+     "fee": 18500,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 9,
+     "fee": 18500,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 10,
+     "fee": 18500,
+     "gifts_cash": [],
+     "gifts_extra": []
+    },
+    {
+     "after_months": 11,
+     "fee": 18500,
+     "gifts_cash": [],
+     "gifts_extra": []
+    }
+   ],
+   "cancel_day_by_hold": {
+    "1": 30,
+    "10": 31,
+    "11": 30,
+    "12": 31,
+    "2": 31,
+    "3": 31,
+    "4": 28,
+    "5": 31,
+    "6": 30,
+    "7": 31,
+    "8": 30,
+    "9": 31
+   }
+  }
+ }
+}
